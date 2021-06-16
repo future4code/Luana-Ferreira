@@ -159,7 +159,12 @@ function multiplicaArrayPor2(array) {
 
 // EXERCÍCIO 17B
 function multiplicaArrayPor2S(array) {
-
+  let numero 
+  let novoArray = []
+  for (numero of array){
+    novoArray.push((numero*2).toString())
+  }
+  return novoArray
 }
 
 // EXERCÍCIO 17C
