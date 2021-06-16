@@ -149,7 +149,12 @@ function menoresDe18(arrayDePessoas) {
 
 // EXERCÍCIO 17A
 function multiplicaArrayPor2(array) {
-
+  let numero
+  let novoArray = []
+  for (numero of array){
+    novoArray.push(numero*2)
+  }
+  return novoArray
 }
 
 // EXERCÍCIO 17B
