@@ -1,7 +1,7 @@
 // EXERCÍCIO 01
 function inverteArray(array) {
   
-  
+
 }
 
 // EXERCÍCIO 02
@@ -18,7 +18,14 @@ for (numeros of array) {
 
 // EXERCÍCIO 03
 function retornaNumerosPares(array) {
-
+let numerosDoArray
+let novoArray2 = []
+for (numerosDoArray of array) {
+  if (numerosDoArray % 2 === 0) {
+     novoArray2.push(numerosDoArray)
+  }
+}
+  return novoArray2
 }
 
 // EXERCÍCIO 04
