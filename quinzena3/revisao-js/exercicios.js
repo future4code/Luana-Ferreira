@@ -64,7 +64,6 @@ function checaTriangulo(a, b, c) {
 // EXERCÍCIO 09
 function comparaDoisNumeros(num1, num2) {
 let comparacao
-let maiorNumero
   if (num1 >= num2){
     let maiorNumero = num1
     let divisivel2 = maiorNumero % num2 === 0
@@ -96,7 +95,13 @@ function ordenaArray(array) {
 
 // EXERCÍCIO 12
 function filmeFavorito() {
-
+const filme = {
+  nome: "O Diabo Veste Prada",
+  ano: 2006,
+  diretor: "David Frankel",
+atores: ["Meryl Streep", "Anne Hathaway", "Emily Blunt", "Stanley Tucci"]
+}
+return filme
 }
 
 // EXERCÍCIO 13
