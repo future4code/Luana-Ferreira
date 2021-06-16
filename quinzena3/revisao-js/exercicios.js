@@ -128,7 +128,13 @@ return retangulo
 
 // EXERCÍCIO 15
 function anonimizaPessoa(pessoa) {
-
+  const pessoa1 ={
+    nome: "ANÔNIMO",
+    idade: pessoa.idade,
+    email: pessoa.email,
+    endereco: pessoa.endereco
+  }
+  return pessoa1
 }
 
 // EXERCÍCIO 16A
