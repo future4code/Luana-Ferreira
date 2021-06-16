@@ -169,8 +169,17 @@ function multiplicaArrayPor2S(array) {
 
 // EXERCÍCIO 17C
 function verificaParidade(array) {
-
-}
+    let numero 
+    let novoArray = []
+    for (numero of array){
+      if (numero % 2 === 0){
+        novoArray.push(numero + " é par")
+      } else if (numero % 2 === 1){
+        novoArray.push(numero + " é ímpar")
+      }
+    }
+    return novoArray
+  }
 
 // EXERCÍCIO 18A
 function retornaPessoasAutorizadas(pessoas) {
