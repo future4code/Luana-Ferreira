@@ -90,7 +90,13 @@ function segundoMaiorEMenor(array) {
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
-
+for (let ultimo = array.length - 1; ultimo > 0; ultimo--){
+  for (let i = 0; i < ultimo; i++){
+    if (array[i] > array[i + 1]) {
+      [array[i], array[i + 1]] = [array[i + 1], array[i]]
+    }
+  }
+} return array 
 }
 
 // EXERCÍCIO 12
