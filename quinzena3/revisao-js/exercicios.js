@@ -1,7 +1,10 @@
 // EXERCÍCIO 01
 function inverteArray(array) {
-  
-
+  let arrayOrdenado = []
+  for(i = 0; i < array.length; i++) {
+        arrayOrdenado[i] = array[array.length-i-1]
+    }
+  return arrayOrdenado
 }
 
 // EXERCÍCIO 02
