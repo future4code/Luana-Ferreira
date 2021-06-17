@@ -85,7 +85,16 @@ let comparacao
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
-
+  for (let ultimo = array.length - 1; ultimo > 0; ultimo--){
+    for (let i = 0; i < ultimo; i++){
+      if (array[i] > array[i + 1]) {
+        [array[i], array[i + 1]] = [array[i + 1], array[i]]
+      }
+    }
+  } 
+  arraySegundoMaiorMenor = []
+  arraySegundoMaiorMenor.push(array[array.length - 2], array[1])
+  return arraySegundoMaiorMenor 
 }
 
 // EXERCÍCIO 11
@@ -209,5 +218,5 @@ function ordenaPorData(consultasData) {
 
 // EXERCÍCIO 20
 function calculaSaldo(contas) {
-
+ 
 }
