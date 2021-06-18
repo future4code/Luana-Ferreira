@@ -36,7 +36,6 @@ function retornaMaiorNumero(array) {
 return Math.max(...array)
 }
 
-
 // EXERCÍCIO 05
 function retornaQuantidadeElementos(array) {
   return array.length 
@@ -50,7 +49,10 @@ function retornaExpressoesBooleanas() {
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
-
+  let numerosPares = []
+  for (let i = 0; i < n; i++){
+    numerosPares.push(i * 2)
+  } return numerosPares
 }
 
 // EXERCÍCIO 08
@@ -157,9 +159,8 @@ function anonimizaPessoa(pessoa) {
 
 // EXERCÍCIO 16A
 function maioresDe18(arrayDePessoas) {
-
+  
 }
-
 // EXERCÍCIO 16B
 function menoresDe18(arrayDePessoas) {
 
