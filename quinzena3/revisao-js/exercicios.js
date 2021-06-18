@@ -217,7 +217,10 @@ const pessoasAutorizadas = pessoas.filter((inputPessoa) => {
 
 // EXERCÍCIO 18B
 function retornaPessoasNaoAutorizadas(pessoas) {
-
+  const pessoasNaoAutorizadas = pessoas.filter((inputPessoa) => {
+    return inputPessoa.altura < 1.5 || inputPessoa.idade <= 14 || inputPessoa.idade > 60
+  })
+  return pessoasNaoAutorizadas
 }
 
 // EXERCÍCIO 19A
