@@ -234,6 +234,28 @@ function ordenaPorData(consultasData) {
 }
 
 // EXERCÍCIO 20
-function calculaSaldo(contas) {
- 
+const contas = [
+	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+	{ cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+	{ cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+	{ cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
+]
+
+function soma(valoresDasCompras){
+  let soma = 0
+  for (let i in valoresDasCompras){
+    soma = soma + valoresDasCompras[i]
+  }
+  return soma
 }
+
+function calculaSaldo(contas) {
+  const saldoFinal = contas.map((inputClientes) => {
+    inputClientes.saldoTotal = inputClientes.saldoTotal - soma(inputClientes.compras)
+    return inputClientes 
+  })
+  return saldoFinal
+}
+
