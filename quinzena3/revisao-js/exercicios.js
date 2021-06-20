@@ -225,12 +225,27 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 19A
 function ordenaPorNome(consultasNome) {
-
+  let verificacao = false;
+  while (!verificacao) {
+    verificacao = true;
+    for (let i = 0; i < consultasNome.length - 1; i++) {
+      let proximoNome = consultasNome[i + 1].nome
+      let comparacao = (consultasNome[i].nome).localeCompare(proximoNome)
+      if (comparacao === 1) {
+        verificacao = false;
+        let tempo = consultasNome[i + 1];
+        consultasNome[i + 1] = consultasNome[i];
+        consultasNome[i] = tempo;
+      }
+    }
+  }
+  return consultasNome;
 }
 
 // EXERCÍCIO 19B
 function ordenaPorData(consultasData) {
 
+  
 }
 
 // EXERCÍCIO 20
