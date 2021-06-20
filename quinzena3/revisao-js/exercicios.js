@@ -225,17 +225,17 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 19A
 function ordenaPorNome(consultasNome) {
-  let verificacao = false;
+  let verificacao = false
   while (!verificacao) {
-    verificacao = true;
+    verificacao = true
     for (let i = 0; i < consultasNome.length - 1; i++) {
       let proximoNome = consultasNome[i + 1].nome
       let comparacao = (consultasNome[i].nome).localeCompare(proximoNome)
       if (comparacao === 1) {
-        verificacao = false;
-        let tempo = consultasNome[i + 1];
-        consultasNome[i + 1] = consultasNome[i];
-        consultasNome[i] = tempo;
+        verificacao = false
+        let tempo = consultasNome[i + 1]
+        consultasNome[i + 1] = consultasNome[i]
+        consultasNome[i] = tempo
       }
     }
   }
@@ -244,8 +244,30 @@ function ordenaPorNome(consultasNome) {
 
 // EXERCÍCIO 19B
 function ordenaPorData(consultasData) {
+  function transformaData(inputData) {
+  const quebrarPalavra = inputData.split(`/`)
+    let dia = quebrarPalavra[0]
+    let mes = quebrarPalavra[1]
+    let ano = quebrarPalavra[2]
+    let data = [ano, mes, dia]
+    return data
+}
 
-  
+let verificacao = false
+  while (!verificacao) {
+    verificacao = true
+    for (let i = 0; i < consultasData.length - 1; i++) {
+      let dataAnterior = new Date(transformaData(consultasData[i].dataDaConsulta))
+      let dataPosterior = new Date(transformaData(consultasData[i + 1].dataDaConsulta))
+      if (dataPosterior < dataAnterior) {
+        verificacao = false
+        let tempo = consultasData[i + 1]
+        consultasData[i + 1] = consultasData[i]
+        consultasData[i] = tempo
+      }
+    }
+  }
+  return consultasData
 }
 
 // EXERCÍCIO 20
