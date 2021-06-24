@@ -1,0 +1,62 @@
+body {
+    background-color:rgb(187, 187, 201);
+}
+
+.nomeDaLoja {
+    text-align:center;
+    color: white;
+    background-color:rgb(199, 85, 85);
+    border:solid black;
+    height: 50px;
+    width: 1300px;
+    padding: 12px;
+}
+
+.fraseDeChamada {
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+    background-color:rgb(199, 85, 85);
+    border:solid black;
+    height: 50px;
+    width: 1300px;
+    padding: 12px;
+}
+
+.segundaFrase {
+    text-align: center;
+}
+
+.seguirNasRedes {
+    text-align: center;
+    background-color:rgb(199, 85, 85);
+    border:solid black;
+    height: 50px;
+    width: 1300px;
+    padding: 12px;
+}
+
+.fotos {
+    text-align: center;
+    margin: 12px
+}
+
+.linksCtrl {
+    border: solid black;
+    height: 36px;
+    width: 480px;
+}
+
+.linksFuncionarios {
+    border: solid black;
+    height: 36px;
+    width: 480px;
+}
+
+.linksProduto {
+    border: solid black;
+    height: 36px;
+    width: 480px;
+}
