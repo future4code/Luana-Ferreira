@@ -102,6 +102,7 @@ table {
     width: 60%;
     text-align: center;
     margin: auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 #imagem1,#imagem2,#imagem3 {
