@@ -137,3 +137,10 @@ td button {
 #back-button:hover {
     background-color: #635a3d
 }
+
+#input-de-busca {
+    border-top: hidden;
+    border-bottom: 1px solid black;
+    border-left: hidden;
+    border-right: hidden;
+}
