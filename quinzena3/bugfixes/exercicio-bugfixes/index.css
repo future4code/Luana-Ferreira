@@ -101,6 +101,7 @@ div:last-child {
 table {
     width: 60%;
     text-align: center;
+    margin: auto;
 }
 
 #imagem1,#imagem2,#imagem3 {
